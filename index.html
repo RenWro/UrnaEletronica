@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lógica de Programação | Urna Eletrônica</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
 </head>
 <body>
-    
+    <div id="container">
+
+        <div id="urnaContainer">
+
+            <div id="visor">
+
+                <div id="fim">FIM</div>
+
+                <div id="candidato">
+
+                    <div id="dadosCandidato">
+                        Seu voto para
+
+                        <h2 id="nomeTitle">CANDIDATO</h2>
+
+                        <div id="numero">
+                            Número:
+                            <div id="num1" value=""></div>
+                            <div id="num2" value=""></div>
+                        </div>
+
+                        <p id="nomeCandidato">Nome:</b> </p>
+                        <p id="partidoCandidato">Partido:</p>
+                    </div>
+
+                    <div id="fotoPresidente">
+                        <div id="legenda">PRESIDENTE</div>
+                    </div>
+
+                </div>
+
+                <div id="instrucoes">
+                    <p>Aperte a tecla:
+                        <br>BRANCO para VOTAR EM BRANCO
+                        <br>VERMELHO para CORRIGIR
+                        <br>VERDE para CONFIRMAR
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="botoes">
+                <button id="botao1" class="btn" value="1">1</button>
+                <button id="botao2" class="btn" value="2">2</button>
+                <button id="botao3" class="btn" value="3">3</button>
+                <button id="botao4" class="btn" value="4">4</button>
+                <button id="botao5" class="btn" value="5">5</button>
+                <button id="botao6" class="btn" value="6">6</button>
+                <button id="botao7" class="btn" value="7">7</button>
+                <button id="botao8" class="btn" value="8">8</button>
+                <button id="botao9" class="btn" value="9">9</button>
+                <button id="botao0" class="btn" value="0">0</button>
+
+                <button id="branco" class="botaoAcao">BRANCO</button>
+                <button id="corrige" class="botaoAcao">CORRIGE</button>
+                <button id="confirma" class="botaoAcao">CONFIRMA</button>
+            </div>
+
+            <!-- <audio id="Numeros" src="mp3" type="audio/mpeg"></audio> 
+            <audio id="Confirma" src="mp3" type="audio/mpeg"></audio>-->
+
+        </div>
     <script src="./urnaEletronica.js"></script>
 </body>
 </html>
